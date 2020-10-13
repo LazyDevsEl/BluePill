@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/medicament"
+        android:enabled="true"
+        android:title="Médicaments"
+        android:icon="@drawable/medicament_icon"/>
+    <item
+        android:id="@+id/patient"
+        android:enabled="true"
+        android:title="Patients"
+        android:icon="@drawable/patient_icon"/>
+    <item
+        android:id="@+id/calcul"
+        android:enabled="true"
+        android:title="Calcul"
+        android:icon="@drawable/calcul_icon"/>
+    <item
+        android:id="@+id/historique"
+        android:enabled="true"
+        android:title="Historique"
+        android:icon="@drawable/historique_icon"/>
+</menu>

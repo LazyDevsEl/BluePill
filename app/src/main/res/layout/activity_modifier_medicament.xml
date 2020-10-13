@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicamentActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/nom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="text"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/labo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Laboratoire"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_below="@+id/nom2"/>
+
+        <EditText
+            android:id="@+id/presentastion2"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Présentation"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/labo2"/>
+
+        <EditText
+            android:id="@+id/c_initial2"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration initiale"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/presentastion2"/>
+        <EditText
+            android:id="@+id/c_minimal2"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration minimale"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/c_initial2"/>
+        <EditText
+            android:id="@+id/c_maximal2"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration maximale"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/c_minimal2"/>
+        <EditText
+            android:id="@+id/prix2"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Prix du mg"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/c_maximal2"/>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/modifier"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:text="Modifier"
+        android:textAllCaps="false"
+        android:background="@drawable/button_change"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="50dp" />
+
+    <Button
+        android:id="@+id/supprimer"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Supprimer"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="50dp"
+        />
+
+</RelativeLayout>

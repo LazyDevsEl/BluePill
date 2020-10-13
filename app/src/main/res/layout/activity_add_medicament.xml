@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicamentActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/labo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Laboratoire"
+            android:layout_margin="5dp"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@+id/nom"/>
+
+        <EditText
+            android:id="@+id/presentastion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Présentation"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@+id/labo"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/c_initial"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration initiale"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@+id/presentastion"/>
+        <EditText
+            android:id="@+id/c_minimal"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration minimale"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@+id/c_initial"/>
+        <EditText
+            android:id="@+id/c_maximal"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Concentration maximale"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/c_minimal"/>
+        <EditText
+            android:id="@+id/prix"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Prix du mg"
+            android:background="@drawable/borderblack"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@+id/c_maximal"/>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_change"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="50dp"
+        android:padding="20dp"/>
+
+</RelativeLayout>

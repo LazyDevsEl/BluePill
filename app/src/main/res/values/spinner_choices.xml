@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flacon">
+        <item>verre</item>
+        <item>pvc</item>
+    </string-array>
+
+    <string-array name="lumiere">
+        <item>sans</item>
+        <item>avec</item>
+    </string-array>
+
+
+</resources>

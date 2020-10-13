@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/ctoolbar"
+    android:background="@drawable/toolbar_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Tnum"
+            android:text="BluePill"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            />
+
+        <Button
+            android:id="@+id/reliquat"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="Gestion Rliquats"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/button_change"
+            />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blackblue" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

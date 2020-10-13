@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BluePill</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="kg">kg</string>
+    <string name="lbp">lbp</string>
+    <string name="cm">cm</string>
+    <string name="ft">ft</string>
+
+
+</resources>

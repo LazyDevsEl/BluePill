@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout">
+    <TextView
+        android:id="@+id/nom_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/idh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toEndOf="@+id/nom_patient"
+            android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/nom_medicament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sanofi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+
+        android:layout_below="@+id/nom_patient"/>
+
+    <RelativeLayout
+        android:id="@+id/resultat"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcul"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderblack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/bfdose"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dose à administrer: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/udose"
+
+            />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/udose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" mg"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/bfvolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volume final: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/bfdose"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/uvolume"
+            android:layout_below="@+id/udose"/>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/uvolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ml"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/udose"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/bfflacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nbr de flacons: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/bfvolume"/>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/flacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/uflacon"
+            android:layout_below="@+id/uvolume"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/uflacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" flacons"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/uvolume"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/bfreliquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reliquat: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/bfflacon"/>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/reliquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/ureliquat"
+            android:layout_below="@+id/uflacon"/>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/ureliquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ml"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/uflacon"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/bfreliquat_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reliquat total: "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/bfreliquat"/>
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/reliquat_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/ureliquat_final"
+            android:layout_below="@+id/ureliquat"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/ureliquat_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ml"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ureliquat"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/bfpoche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poche: "
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/bfreliquat_final"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/poche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/upoche"
+            android:layout_below="@+id/ureliquat_final"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/upoche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ml"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ureliquat_final"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

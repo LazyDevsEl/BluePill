@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout">
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Docixal"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textAllCaps="true"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/labo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanofi"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/nom"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nom"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/borderblack"
+            >
+            <TextView
+                android:id="@+id/bfp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Présentation : - Flacon de "
+                android:layout_alignParentStart="true"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"
+                />
+            <TextView
+                android:id="@+id/pres1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_toEndOf="@id/bfp"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"
+                />
+            <TextView
+                android:id="@+id/afpres1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" mg/1ml"
+                android:layout_toEndOf="@id/pres1"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"
+                />
+
+
+            <TextView
+                android:id="@+id/bfci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concentration initiale : "
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/pres1"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/ci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_toEndOf="@+id/bfci"
+                android:layout_below="@+id/pres1"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/afci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" mg/ml"
+                android:layout_toEndOf="@+id/ci"
+                android:layout_below="@+id/pres1"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+
+            <TextView
+                android:id="@+id/bfcmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concentration minimale : "
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ci"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/cmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,3"
+                android:layout_toEndOf="@+id/bfcmin"
+                android:layout_below="@+id/ci"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/afcmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" mg/ml"
+                android:layout_toEndOf="@+id/cmin"
+                android:layout_below="@+id/ci"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+
+            <TextView
+                android:id="@+id/bfcmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concentration maximale : "
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cmin"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/cmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,74"
+                android:layout_toEndOf="@+id/bfcmax"
+                android:layout_below="@+id/cmin"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/afcmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" mg/ml"
+                android:layout_toEndOf="@+id/cmax"
+                android:layout_below="@+id/cmin"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+
+            <TextView
+                android:id="@+id/bfvap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume après préparation : "
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cmax"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/volumeap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_toEndOf="@+id/bfvap"
+                android:layout_below="@+id/cmax"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/afvolumeap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ml"
+                android:layout_toEndOf="@+id/volumeap"
+                android:layout_below="@+id/cmax"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+
+            <TextView
+                android:id="@+id/bfpr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix du mg : "
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/volumeap"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/prix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:layout_toEndOf="@+id/bfpr"
+                android:layout_below="@+id/volumeap"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/afprix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DA"
+                android:layout_toEndOf="@+id/prix"
+                android:layout_below="@+id/volumeap"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_toEndOf="@+id/bfpr"
+                android:layout_below="@+id/volumeap"
+                android:visibility="invisible"
+                android:textSize="12dp"
+                android:textColor="@color/grey2"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
